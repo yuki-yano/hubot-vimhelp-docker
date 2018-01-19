@@ -1,0 +1,5 @@
+node_modules
+.hubot_history
+plugins/*
+!pugins/.keep
+package-lock.json

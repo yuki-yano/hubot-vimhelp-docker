@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set set -e
+export PATH="$(npm bin):node_modules/hubot/node_modules/.bin:$PATH"
+
+exec ./node_modules/.bin/forever -c "node ./node_modules/.bin/coffee" ./node_modules/.bin/hubot -a slack
